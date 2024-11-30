@@ -1,0 +1,57 @@
+/* В этом файле вы опишете значения переменных в разных цветовых схемах.
+Придерживайтесь такого именования классов:
+✦ theme-dark — класс тёмной темы
+✦ theme-light — класс светлой темы
+✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
+*/
+html.theme-light {
+    --text-color: #000000;
+    --button-invert-color: #fff;
+    --bg-color: #fff;
+    --bg-gradient-color: #d3d3d3;
+    --bg-linear-gradient-color-start: #e7e7e7;
+    --bg-linear-gradient-color-end: #1a1a1a;
+    --text-weight-title: 700;
+    --text-weight-paragraph: 400;
+    --heart-dark-color: #000;
+    
+    background-image:
+      repeating-linear-gradient(90deg, var(--bg-gradient-color) 0 2px, rgb(0 0 0 / 0) 2px 4px),
+      repeating-linear-gradient(180deg, var(--bg-gradient-color) 0 2px, rgb(0 0 0 / 0) 2px 4px),
+      linear-gradient(180deg, var(--bg-linear-gradient-color-start) 0%, var(--bg-linear-gradient-color-start) 0.01%, var(--bg-linear-gradient-color-end) 100%);
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      --text-color: #000000;
+      --button-invert-color: #fff;
+      --bg-color: #fff;
+      --bg-gradient-color: #d3d3d3;
+      --bg-linear-gradient-color-start: #e7e7e7;
+      --bg-linear-gradient-color-end: #1a1a1a;
+      --text-weight-title: 700;
+      --text-weight-paragraph: 400;
+      --heart-dark-color: #000;
+      background-image:
+        repeating-linear-gradient(90deg, var(--bg-gradient-color) 0 2px, rgb(0 0 0 / 0) 2px 4px),
+        repeating-linear-gradient(180deg, var(--bg-gradient-color) 0 2px, rgb(0 0 0 / 0) 2px 4px),
+        linear-gradient(180deg, var(--bg-linear-gradient-color-start) 0%, var(--bg-linear-gradient-color-start) 0.01%, var(--bg-linear-gradient-color-end) 100%);
+    }
+  }
+  
+  html.theme-dark {
+    --text-color: #00CC14;
+    --button-invert-color: #00CC14;
+    --bg-color: #000000;
+    --bg-gradient-color: #000000;
+    --bg-linear-gradient-color-start: #007F0C;
+    --bg-linear-gradient-color-end: #004306;
+    --text-weight-title: 785;
+    --text-weight-paragraph: 465;
+    --heart-dark-color: #00CC14;
+  
+    background-image:
+      repeating-linear-gradient(90deg, var(--bg-gradient-color) 0 2px, rgb(0 0 0 / 0) 2px 4px),
+      repeating-linear-gradient(180deg, var(--bg-gradient-color) 0 2px, rgb(0 0 0 / 0) 2px 4px),
+      linear-gradient(180deg, var(--bg-linear-gradient-color-start) 0%, var(--bg-linear-gradient-color-end) 100%);
+  }
