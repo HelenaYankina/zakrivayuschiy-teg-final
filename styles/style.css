@@ -1,8 +1,8 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  min-width: 375px;
-  max-width: 700px;
+  min-width: 400px;
+  max-width: 785px;
   margin: auto;
   color: var(--text-color);
   background-size: cover;
@@ -134,7 +134,6 @@
 @supports (text-stroke: 1px var(--bg-color)) or (-webkit-text-stroke: 1px var(--bg-color)) {
   .watermark {
     text-shadow: none;
-    text-stroke: 1px var(--bg-color);
     -webkit-text-stroke: 1px var(--bg-color);
   }
 }
